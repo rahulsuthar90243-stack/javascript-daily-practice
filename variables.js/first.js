@@ -22,3 +22,11 @@ const student ={
     age : 20,
     isPass : true
 }
+
+student["age"] = 21;
+student.cgpa = 9.5;
+
+console.log(student.fullName);
+
+student["fullName"] = "Rahul Kumar Suthar";
+console.log(student["fullName"]);

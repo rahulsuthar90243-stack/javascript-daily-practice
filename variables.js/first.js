@@ -30,3 +30,6 @@ console.log(student.fullName);
 
 student["fullName"] = "Rahul Kumar Suthar";
 console.log(student["fullName"]);
+
+student.isPass = false;
+console.log(student.isPass);

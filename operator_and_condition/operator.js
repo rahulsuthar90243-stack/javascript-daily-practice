@@ -21,3 +21,15 @@ c /= 4;
 console.log("Division Assignment:", c); // 6
 c %= 4;
 console.log("Modulus Assignment:", c); // 2
+
+// Comparison Operators
+let x = 5;
+let y = '5';
+console.log("Equal to (==):", x == y); // true
+console.log("Not equal to (!=):", x != y); // false
+console.log("Strict equal to (===):", x === y); // false
+console.log("Strict not equal to (!==):", x !== y); // true
+console.log("Greater than (>):", x > 3); // true
+console.log("Less than (<):", x < 10); // true
+console.log("Greater than or equal to (>=):", x >= 5); // true
+console.log("Less than or equal to (<=):", x <= 4); // false

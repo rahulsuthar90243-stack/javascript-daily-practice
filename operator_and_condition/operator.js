@@ -33,3 +33,10 @@ console.log("Greater than (>):", x > 3); // true
 console.log("Less than (<):", x < 10); // true
 console.log("Greater than or equal to (>=):", x >= 5); // true
 console.log("Less than or equal to (<=):", x <= 4); // false
+
+// Logical Operators
+let p = true;
+let q = false;
+console.log("Logical AND (&&):", p && q);
+console.log("Logical OR (||):", p || q);
+console.log("Logical NOT (!):", !p);

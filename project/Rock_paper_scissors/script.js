@@ -4,6 +4,9 @@ let comp_score = 0;
 
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
+const userScorePara = document.querySelector("#user_score");
+const compScorePara = document.querySelector("#comp_score");
+
 
 const genCompChoice = () => {
  const option = ["rock", "paper", "scissors"];
@@ -19,11 +22,15 @@ const drowGame = () =>{
 
 
 const showWinner = (userWin, userChoice, compChoice)  => {
-    if(userWin){;
+    if(userWin){
+        user_score++
+        userScorePara.innerText = user_score;
         msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
          msg.style.backgroundColor = "green";
 
     }else{
+        comp_score++;
+        compScorePara.innerText = comp_score;
         msg.innerText = `You loss. ${userChoice} beats your ${compChoice}`;
         msg.style.backgroundColor = "red";
     }

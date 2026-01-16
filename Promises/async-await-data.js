@@ -67,3 +67,22 @@ async function getAllData(){
 //  }).then((res) =>{
 //     console.log(res);
 //  })
+
+const dob =  (age)=>{
+    const currentYear = 2026;
+    return currentYear - age;
+}
+
+console.log(dob(2007));
+
+function factorial(n){
+
+    if(n === 1){
+        return 1;
+    }
+    else{
+        return n*factorial(n-1);
+    }
+}
+//factorial(3)
+//Output:-6;

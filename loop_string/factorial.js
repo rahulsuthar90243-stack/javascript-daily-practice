@@ -1,8 +1,8 @@
 const num = prompt("Please, enter number of factorial.");
-const fact = 0;
+let fact = 1;
 
-for(let i = 0; i < num; i++){
-    fact += i;
+for(let i = 1; i <= num; i++){
+    fact *= i;
 }
 
 console.log(`Number ${num} is Factorial ${fact}`);

@@ -21,3 +21,13 @@ console.log(str);
 str = JSON.parse(str);
 console.log(typeof str);
 console.log(str);
+
+
+// Store JSON data in local storage
+
+localStorage.setItem("Name", "Rs Coding");
+console.log(localStorage.getItem("Name"));
+
+localStorage.setItem("Project", JSON.stringify(project));
+let project2 = JSON.parse(localStorage.getItem("Project"));
+console.log(project2);

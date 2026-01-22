@@ -4,6 +4,11 @@ const score = {
  Win: 0,
  Loss: 0,
  Tie: 0,
+
+ display: function (){
+  return  "Scoreboard: " + "\n" + "Wins: " + score.Win + 
+        "  Losses: " + score.Loss + "  Ties: " + score.Tie;
+ }
 }
 
 buttons.forEach((button) =>{
@@ -31,7 +36,6 @@ buttons.forEach((button) =>{
       }
 
 
-      alert("You choice: " + user_choice + "\n" + "computer choice: " + compChoice + "\n\n" + result + "\n\n" + "Scoreboard: " + "\n" + "Wins: " + score.Win + 
-        "  Losses: " + score.Loss + "  Ties: " + score.Tie);
+      alert("You choice: " + user_choice + "\n" + "computer choice: " + compChoice + "\n\n" + result + "\n\n" + score.display());
     })
 })

@@ -25,7 +25,11 @@ score.display = function (){
   score.Tie = 0;
  
   localStorage.setItem('cricketScore', JSON.stringify(score));
-  alert("Score Reset Successfully");
+
+  document.getElementById("score").innerText = score.display();
+  document.getElementById("user-move").innerText = "";
+  document.getElementById("comp-move").innerText = "";
+  document.getElementById("result").innerText = "";
 
 });
 
@@ -53,7 +57,11 @@ buttons.forEach((button) =>{
         score.Loss++;
       }
 
+      document.getElementById("user-move").innerText = "You chosen: " + user_choice;
+      document.getElementById("comp-move").innerText = "Computer chosen: " + compChoice;
+      document.getElementById("result").innerText = result;
+      document.getElementById("score").innerText = score.display();
 
-      alert("You choice: " + user_choice + "\n" + "computer choice: " + compChoice + "\n\n" + result + "\n\n" + score.display());
+      // alert("You choice: " + user_choice + "\n" + "computer choice: " + compChoice + "\n\n" + result + "\n\n" + score.display());
     })
 })

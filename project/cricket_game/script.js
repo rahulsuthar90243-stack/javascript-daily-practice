@@ -13,6 +13,8 @@ let score  = JSON.parse(localStorage.getItem('cricketScore')) || {
 score.display = function (){
   localStorage.setItem('cricketScore', JSON.stringify(score));
 
+  
+
   return  "Scoreboard: " + "\n" + "Wins: " + score.Win + 
         "  Losses: " + score.Loss + "  Ties: " + score.Tie;
  }
@@ -31,12 +33,13 @@ score.display = function (){
   document.getElementById("comp-move").innerText = "";
   document.getElementById("result").innerText = "";
 
+
 });
 
 buttons.forEach((button) =>{
     button.addEventListener("click", () =>{
 
-        let user_choice = button.innerText;
+        let user_choice = button.dataset.choice
         
       const choice = ["Bat", "Ball", "Stump"];
       const randomIndex = Math.floor(Math.random() * 3);
@@ -51,6 +54,7 @@ buttons.forEach((button) =>{
                 (user_choice === "Ball" && compChoice === "Stump") ||
                 (user_choice === "Stump" && compChoice === "Bat")){
             result = "You Win";
+  
             score.Win++;
       } else{
         result = "Computer Win";
@@ -62,6 +66,7 @@ buttons.forEach((button) =>{
       document.getElementById("result").innerText = result;
       document.getElementById("score").innerText = score.display();
 
-      // alert("You choice: " + user_choice + "\n" + "computer choice: " + compChoice + "\n\n" + result + "\n\n" + score.display());
+      
+      // ("You choice: " + user_choice + "\n" + "computer choice: " + compChoice + "\n\n" + result + "\n\n" + score.display());
     })
 })

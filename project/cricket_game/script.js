@@ -1,15 +1,33 @@
-const buttons = document.querySelectorAll(".btn")
+const buttons = document.querySelectorAll(".btn");
+const reset = document.getElementById("Reset");
 
-const score = {
+
+
+let score  = JSON.parse(localStorage.getItem('cricketScore')) || {
  Win: 0,
  Loss: 0,
  Tie: 0,
+}
 
- display: function (){
+
+score.display = function (){
+  localStorage.setItem('cricketScore', JSON.stringify(score));
+
   return  "Scoreboard: " + "\n" + "Wins: " + score.Win + 
         "  Losses: " + score.Loss + "  Ties: " + score.Tie;
  }
-}
+
+
+ reset.addEventListener("click", () =>{
+  
+  score.Win = 0;
+  score.Loss = 0;
+  score.Tie = 0;
+ 
+  localStorage.setItem('cricketScore', JSON.stringify(score));
+  alert("Score Reset Successfully");
+
+});
 
 buttons.forEach((button) =>{
     button.addEventListener("click", () =>{
@@ -25,7 +43,7 @@ buttons.forEach((button) =>{
       if(user_choice === compChoice){
         result = "It's a Tie";
         score.Tie++;
-      } else if((user_choice === "Bal" && compChoice === "Ball") || 
+      } else if((user_choice === "Bat" && compChoice === "Ball") || 
                 (user_choice === "Ball" && compChoice === "Stump") ||
                 (user_choice === "Stump" && compChoice === "Bat")){
             result = "You Win";

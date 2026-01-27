@@ -24,4 +24,12 @@ by practicing and pushing code daily.
 - VS Code
 - Git & GitHub
 
+
+Project
+- Calculator
+- Cricket_Game
+- Rock-Paper_scissors
+- Todo_App
+- Myntra_Functional_clone
+  
 ⭐ Feel free to explore and give suggestions!

@@ -25,7 +25,7 @@ by practicing and pushing code daily.
 - Git & GitHub
 
 
-Project
+##  Project
 - Calculator
 - Cricket_Game
 - Rock-Paper_scissors

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#parent{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 8px 39px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 20px 37px rgb(0 0 0 / 20%);
+    color: white;
+     transition: 0.3s;
+}
+
+.btn :hover{
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);}
+
+
+#red{
+    background-color: red;
+    cursor: pointer;
+ 
+}
+
+
+#green{
+    background-color: green;
+    cursor: pointer;
+
+}
+
+#blue{
+    background-color: blue;
+    cursor: pointer;
+}
+
+#orange{
+    background-color: orange;
+    cursor: pointer;
+}
+
+#yellow{
+    background-color: yellow;
+    cursor: pointer;
+    color: black;
+}

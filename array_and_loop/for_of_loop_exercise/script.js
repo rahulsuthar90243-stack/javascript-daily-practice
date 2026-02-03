@@ -26,3 +26,32 @@ for(const val of map){
 // for(const key in map){
 //     console.log(key);
 // }
+
+
+
+
+
+
+// object
+
+const user = {
+    firstName: "Mahipal",
+    lastName: "Singh",
+    age: 20,
+}
+
+for(const key in user){
+    console.log(user[key]);
+}
+console.log("\n");
+
+const student = {
+    name: "Rohit Kumar",
+    class: 10,
+    age: 17,
+}
+
+for(const val in student){
+  console.log(val, student);
+}
+console.log("\n");

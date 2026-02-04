@@ -15,3 +15,11 @@ myCoding.forEach((item, index, arr)=>{
 //     console.log(val);
 // }
 console.log("\n");
+
+
+
+const marks = [34, 56, 78];
+
+marks.forEach((item)=>{
+    console.log(item);
+});

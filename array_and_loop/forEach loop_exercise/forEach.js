@@ -23,3 +23,18 @@ const marks = [34, 56, 78];
 marks.forEach((item)=>{
     console.log(item);
 });
+
+
+
+
+
+const coding = ["JavaScript", "Java", "Python"];
+
+function printMe(item){
+  console.log(item);
+} 
+
+coding.forEach(printMe);
+console.log("\n");
+myCoding.forEach(printMe);
+console.log("\n");

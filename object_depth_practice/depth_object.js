@@ -20,3 +20,17 @@ for(const val in user){
 
 
 console.log("\n\n");
+
+
+
+// for of loop
+const student = {
+    studentName: "Mahipal",
+    age: 18,
+    class: 12,
+}
+
+for(const [key, value] of Object.entries(student)){
+    console.log(key, value);
+} 
+console.log("\n\n");

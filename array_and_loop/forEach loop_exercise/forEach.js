@@ -38,3 +38,24 @@ coding.forEach(printMe);
 console.log("\n");
 myCoding.forEach(printMe);
 console.log("\n");
+
+
+const programming = [
+    {
+        languageName: "JavaScript",
+        languageFile: "Js"
+    },
+    {
+        languageName: "Python",
+        languageFile: "Py"
+    },
+    {
+        languageName: "C++",
+        languageFile: "C++"
+    }
+]
+
+programming.forEach((item)=>{
+    console.log(item.languageName);
+})
+console.log("\n\n");

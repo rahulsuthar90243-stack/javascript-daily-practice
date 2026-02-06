@@ -34,3 +34,28 @@ for(const [key, value] of Object.entries(student)){
     console.log(key, value);
 } 
 console.log("\n\n");
+
+
+// this.value used to access the specific value property of the current object 
+
+const std = {
+    studentName: "Mahipal",
+    age: 18,
+    class: 12,
+    greeting: function(){
+        console.log(`Strike is coming on 10 feb ${this.studentName}`);
+    }
+}
+const std2 = {
+    studentName: "Rahul",
+    age: 18,
+    class: 12,
+    greeting: function(){
+        console.log(`Strike is coming on 10 feb ${this.studentName}`);
+    }
+}
+
+std.greeting();
+std2.greeting();
+
+console.log("\n\n");

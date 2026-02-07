@@ -97,3 +97,19 @@ const newNumber = myNumbers.map((num)=> num * 10)
                            .filter((num)=> num > 40);
 console.log(newNumber);
 console.log("\n");
+
+
+
+//reduce
+
+const MyNum = [1, 2, 3];
+
+// const myTotal = MyNum.reduce(function(acc, curr){
+//     console.log(`acc: ${acc} and currval: ${curr}`);
+//  return acc + curr;
+// }, 0)
+ 
+const myTotal = MyNum.reduce(( acc, curr)=> acc + curr, 0)
+
+
+console.log(myTotal);

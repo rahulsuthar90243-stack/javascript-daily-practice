@@ -105,3 +105,9 @@ console.log("\n");
 // console.log(detai2);
 
 
+// deep copy
+const detai3 = structuredClone(detai1);
+detai3.address.city = "Sirohi";
+console.log("\n");
+console.log(detai1.address.city);
+console.log(detai3.address.city);

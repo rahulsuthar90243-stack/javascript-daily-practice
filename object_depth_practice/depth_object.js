@@ -59,3 +59,49 @@ std.greeting();
 std2.greeting();
 
 console.log("\n\n");
+
+
+
+// nested object
+
+const detail = {
+    name: "Rahul ",
+    age: 18,
+    emailId: "rahul!gmail.com",
+    amount: 4000,
+    address: {
+        city: "Sirohi",
+        state: "Rajasthan",
+    }
+}
+
+console.log(detail.address);
+console.log(detail.address.city);
+console.log("\n\n");
+
+//shallow copy
+
+ const detai1 = {
+    name: "Rahul ",
+    age: 18,
+    emailId: "rahul!gmail.com",
+    amount: 4000,
+    address: {
+        city: "Sirohi",
+        state: "Rajasthan",
+    }
+}
+
+
+//shallow copy
+const detai2 = {...detai1};
+detai2.name = "Vp";
+console.log(detai1);
+console.log(detai2);
+console.log("\n");
+
+// detai2.address.city = "Jalore";
+// console.log(detai1);
+// console.log(detai2);
+
+

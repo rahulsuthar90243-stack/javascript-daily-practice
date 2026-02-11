@@ -113,3 +113,24 @@ const myTotal = MyNum.reduce(( acc, curr)=> acc + curr, 0)
 
 
 console.log(myTotal);
+
+
+// shopping Cart
+
+const shoppintCart = [
+    {
+        itemName: "JS Course",
+        price: 2999
+    },
+       {
+        itemName: "Python Course",
+        price: 1500
+    },
+       {
+        itemName: "frontend Dev",
+        price: 3999
+    },
+]
+
+const totalPrice = shoppintCart.reduce((acc, item)=> acc + item.price, 0);
+console.log("Total Price: ", totalPrice);

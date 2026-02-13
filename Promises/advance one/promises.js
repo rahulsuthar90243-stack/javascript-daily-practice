@@ -74,3 +74,28 @@ const promiseArray = new Promise ((resolve, reject)=>{
 promiseArray.then(()=>{
     console.log("task compelete");
 })
+
+
+
+const promiseFive = new Promise ((resolve, reject)=>{
+    setTimeout(()=>{
+        let error = false;
+        if(!error){
+            resolve({Language: "JS", password: 123});
+        }else{
+            reject("Error: js went wrong");
+        }
+    }, 6000);
+})
+
+
+async function consumePromiseFive(){
+    const response = await promiseFive
+    try{
+    console.log(response);
+    }catch(error){
+    console.log("Error: some wrong");
+    }
+}
+
+consumePromiseFive();

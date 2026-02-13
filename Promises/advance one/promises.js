@@ -21,3 +21,56 @@ new Promise (function(resolve, reject){
 }).then(function (){
     console.log("Async task 2 compelete");
 })
+
+
+
+new Promise ((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve({username: 'Rahul', gmail: 'rahul@gmail.com'});
+    }, 3000)
+}).then((user)=>{
+    console.log(user);
+})
+
+
+const promiseFour = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        let error = false;
+        if(!error){
+            resolve({roll: 102, name: 'mahipal', course: "B.tech"});
+        }else{
+            reject("ERROR: something went wrong");
+        }
+    }, 4000)
+})
+
+
+promiseFour.then((user)=>{
+ console.log(user);
+ return user.name;
+}).then((username)=>{
+    console.log(username);
+}).catch((error)=>{
+    console.log(error);
+})
+
+
+const promiseArray = new Promise ((resolve, reject)=>{
+    setTimeout(()=>{
+        let arr = [1, 2, 3, 4, 5];
+        arr.forEach((item)=>{
+            console.log(item);
+        resolve();
+
+        })
+
+        // for(const value of arr){
+        //  console.log(value);
+        // }
+
+    }, 5000)
+})
+
+promiseArray.then(()=>{
+    console.log("task compelete");
+})

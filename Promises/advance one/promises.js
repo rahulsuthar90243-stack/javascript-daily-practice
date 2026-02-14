@@ -119,3 +119,12 @@ promiseMsg.then((problem)=>{
  console.log("Error: problem not solve");
 })
 
+async function problem() {
+    const response = await promiseMsg
+    try{
+        console.log("Problem are solve");
+    }catch(error){
+        console.log("Error: Problem not solve");
+    }
+}
+problem();

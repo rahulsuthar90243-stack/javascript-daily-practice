@@ -39,3 +39,9 @@ let marvel = ["Superman", "Thor", "Batman", "Spiderman"];
 for(let hero of marvel){
     console.log(hero);
 }
+
+const number = [1, 2, 3, 4, 5];
+
+for(let value of num){
+    console.log(value);
+}

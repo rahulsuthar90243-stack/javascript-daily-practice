@@ -45,3 +45,21 @@ const number = [1, 2, 3, 4, 5];
 for(let value of num){
     console.log(value);
 }
+
+
+
+// Array and Loop Exercise
+
+let arr2 = [5, 6];
+arr2.push(7);
+arr2.unshift(4);
+console.log(arr2);
+console.log("\n\n");
+// Function to get element at a specific position (1-based index)
+function getElement(Array, position){
+    return Array[position - 1];
+}
+
+let Array = [1, 2, 3, 4, 5];
+console.log(getElement(Array, 3));
+console.log("\n\n");

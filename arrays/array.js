@@ -63,3 +63,31 @@ function getElement(Array, position){
 let Array = [1, 2, 3, 4, 5];
 console.log(getElement(Array, 3));
 console.log("\n\n");
+
+
+
+// Function to check if a number is prime
+
+function isPrime(num){
+    for(let i = 2; i < num; i++){
+        if(num % i === 0){
+            return false
+        }
+    }
+    return true;
+}
+
+
+let num = 2;
+let i = 0;
+while(true){
+    if(isPrime(num)){
+        console.log(num);
+        i++;
+        if(i >= 5){
+            break;
+        }
+    }
+    num++;
+}
+console.log("\n\n");

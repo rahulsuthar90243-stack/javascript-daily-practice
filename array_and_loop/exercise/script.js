@@ -85,7 +85,7 @@ console.log(result.trim());
 
 
 
-
+// Find the Largest Number in an Array
 
 function findLargestNumber(arr) {
   let max = arr[0];
@@ -99,3 +99,14 @@ function findLargestNumber(arr) {
 
 const numbers = [2, 4, 1, 9, 5];
 console.log(findLargestNumber(numbers));
+
+
+
+
+// Reverse a String
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("JavaScript")); // Output: tpircSavaJ

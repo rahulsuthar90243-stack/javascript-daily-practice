@@ -80,3 +80,22 @@ for(let i = 0; i < text.length; i++){
 }
 
 console.log(result.trim());
+
+
+
+
+
+
+
+function findLargestNumber(arr) {
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+const numbers = [2, 4, 1, 9, 5];
+console.log(findLargestNumber(numbers));

@@ -1,0 +1,81 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff4e50, #991200d7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Heading */
+h1{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Button */
+#btn{
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #D94148;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+#btn:hover{
+    background: #D94148;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Main Container */
+#first{
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Section Boxes */
+#first > div{
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f8f8f8;
+    transition: 0.3s ease;
+}
+
+#first > div:hover{
+    background: #ffe5e7;
+}
+
+/* Section Headings */
+h2{
+    margin-bottom: 8px;
+    color: #D94148;
+}
+
+/* Paragraph Text */
+p{
+    margin: 5px 0;
+    color: #333;
+    font-size: 15px;
+}
